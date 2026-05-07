@@ -1,0 +1,16 @@
+node_modules/
+dist/
+coverage/
+
+.env
+.env.local
+
+.vscode/
+.idea/
+
+.DS_Store
+Thumbs.db
+
+*.tgz
+
+npm-debug.log*
