@@ -1,3 +1,6 @@
+coverage/
+src/
 tests/
 scripts/
-node_modules/
+*.config.ts
+tsconfig.json
