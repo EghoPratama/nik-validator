@@ -33,5 +33,13 @@
   },
   "bin": {
     "nik-id-validator": "dist/cli.js"
+  },
+   "repository": {
+    "type": "git",
+    "url": "https://github.com/EghoPratama/nik-validator.git"
+  },
+  "homepage": "https://github.com/EghoPratama/nik-validator",
+  "bugs": {
+    "url": "https://github.com/EghoPratama/nik-validator/issues"
   }
 }
