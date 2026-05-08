@@ -1,5 +1,5 @@
 {
-  "name": "@eghopr/nik-validator",
+  "name": "@egho_pratama/nik-validator",
   "version": "1.0.3",
   "description": "Validate and parse Indonesian NIK",
   "main": "dist/index.js",
