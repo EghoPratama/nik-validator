@@ -1,36 +1,41 @@
-# nik-validator ID
+# 🇮🇩 nik-validator ID
 
-Simple utility to validate and parse Indonesian NIK (Nomor Induk Kependudukan).
+Simple and lightweight utility to validate and parse Indonesian **NIK (Nomor Induk Kependudukan)**.
 
-## Features
+## ✨ Features
 
-- Validate NIK format
-- Parse birth date
-- Detect gender
-- Detect province & city
-- CLI support
-- TypeScript support
+- ✅ Validate Indonesian NIK format
+- 🎂 Parse birth date
+- 👨 Detect gender
+- 🗺️ Detect province & city
+- ⚡ Fast and lightweight
+- 🖥️ CLI support
+- 📦 TypeScript support
 
 ---
 
-## Installation
+## 📦 Installation
 
+Using npm:
+
+```bash
 npm install @egho_pratama/nik-validator
-
+```
 ---
 
-## Usage
+## 🚀 Usage
 
+```ts
 import { parseNIK } from '@egho_pratama/nik-validator';
 
 const result = parseNIK('3203015509980001');
 
 console.log(result);
+```
 
----
+### Output
 
-## Example Output
-
+```json
 {
   "isValid": true,
   "gender": "female",
@@ -38,31 +43,83 @@ console.log(result);
   "province": "Jawa Barat",
   "city": "Kabupaten Cianjur"
 }
+```
 
 ---
 
-## CLI Usage
+## 🖥️ CLI Usage
 
+```bash
 npx @egho_pratama/nik-validator 3203015509980001
+```
+
+Example output:
+
+```bash
+✔ Valid NIK
+Gender     : female
+Birth Date : 1998-09-15
+Province   : Jawa Barat
+City       : Kabupaten Cianjur
+```
 
 ---
 
-## API
+## 📚 API Reference
 
-### parseNIK(nik)
+### `parseNIK(nik)`
 
 Parse Indonesian NIK information.
 
-### validateNIK(nik)
+#### Parameters
 
-Validate NIK format only.
+| Name | Type | Description |
+|------|------|-------------|
+| `nik` | `string` | Indonesian NIK number |
+
+#### Returns
+
+```ts
+{
+  isValid: boolean;
+  gender?: string;
+  birthDate?: string;
+  province?: string;
+  city?: string;
+}
+```
 
 ---
 
-## Coverage
+### `validateNIK(nik)`
 
-- Statements: 95%+
-- Functions: 100%
+Validate NIK format only.
+
+#### Example
+
+```ts
+import { validateNIK } from '@egho_pratama/nik-validator';
+
+console.log(validateNIK('3203015509980001'));
+// true
+```
+
+---
+
+## 🧪 Test Coverage
+
+| Type | Coverage |
+|------|----------|
+| Statements | 95%+ |
+| Functions | 100% |
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to fork this repository and submit a pull request.
 
 ---
 
