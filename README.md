@@ -7,7 +7,7 @@ Simple and lightweight utility to validate and parse Indonesian **NIK (Nomor Ind
 - ✅ Validate Indonesian NIK format
 - 🎂 Parse birth date
 - 👨 Detect gender
-- 🗺️ Detect province & city
+- 🗺️ Detect province, city and district
 - ⚡ Fast and lightweight
 - 🖥️ CLI support
 - 📦 TypeScript support
@@ -38,10 +38,14 @@ console.log(result);
 ```json
 {
   "isValid": true,
+  "nik": "3203015509980001",
   "gender": "female",
   "birthDate": "1998-09-15",
-  "province": "Jawa Barat",
-  "city": "Kabupaten Cianjur"
+  "region": {
+    "province": "Jawa Barat",
+    "city": "Kabupaten Cianjur",
+    "district": "Cianjur"
+  },
 }
 ```
 
@@ -87,9 +91,9 @@ Parse Indonesian NIK information.
   gender?: string;
   birthDate?: string;
   region: {
-      province?: string;
-      city?: string;
-      district?: string;
+    province?: string;
+    city?: string;
+    district?: string;
   }
 }
 ```
