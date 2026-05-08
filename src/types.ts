@@ -3,6 +3,7 @@ export type Gender = 'male' | 'female';
 export interface Region {
   province: string;
   city: string;
+  district: string;
 }
 
 export interface NIKResult {
@@ -10,6 +11,5 @@ export interface NIKResult {
   nik: string;
   gender?: Gender;
   birthDate?: string;
-  regionCode?: string;
   region?: Region | null;
 }

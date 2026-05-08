@@ -28,7 +28,6 @@ export function parseNIK(nik: string): NIKResult {
     nik,
     gender,
     birthDate: `${fullYear}-${month}-${String(day).padStart(2, '0')}`,
-    regionCode: nik.slice(0, 6),
     region
   };
 }

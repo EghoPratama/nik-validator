@@ -61,6 +61,7 @@ Gender     : female
 Birth Date : 1998-09-15
 Province   : Jawa Barat
 City       : Kabupaten Cianjur
+District   : Cianjur
 ```
 
 ---
@@ -82,10 +83,14 @@ Parse Indonesian NIK information.
 ```ts
 {
   isValid: boolean;
+  nik: string;
   gender?: string;
   birthDate?: string;
-  province?: string;
-  city?: string;
+  region: {
+      province?: string;
+      city?: string;
+      district?: string;
+  }
 }
 ```
 
