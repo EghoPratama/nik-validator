@@ -1,6 +1,6 @@
 {
   "name": "@egho_pratama/nik-validator",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Validate and parse Indonesian NIK",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
